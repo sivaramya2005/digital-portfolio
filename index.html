@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-image: url("bg1.jpg"); 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:#ff157e;
+            color: black;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 10px;
+            left:10px;
+            border: 2px solid white;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-top:80px;
+        }
+
+        nav {
+            background-color:#00abff;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin:20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body> 
+
+    <header>
+        <div class="header-content">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/img.jpg" alt="your profile picture"class="profile-picture">
+            <h1>SIVARAMYA M</h1>
+            <h4>BCA - Computer Applications</h4>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>Objective</h2>
+            <p>I recently graduated with a degree in Computer Application from <b>The Quaide Milleth College for Men</b>. During my studies, I gained experience in web development and data analysis through various projects and internships. I am proficient in <b>Python, JavaScript, HTML, CSS</b>.</p>
+        </div>
+    </section>
+
+    <section id="qual">
+        <div class="section-content">
+            <h2>Qualification</h2>
+            <p><b>12th pass</b> from State Board of Secondary Education with <b>92%</b></p>
+        </div>    
+    </section>    
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>2023-2026 
+             The Quaide Milleth College for Men shift-||, Affiliated to University of Madras,Chennai.</p>
+            <p><b>BCA=94%</b></p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <h3>Programming</h3>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>Java</li>
+            </ul>
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Digital Portfolio</a></li>
+                <li><a href="#">E-commerce Website</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <p>Click the button below to download my resume.</p>
+            <a href="resume.pdf" download class="download-button">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <center>
+                <p>Email: <b>sivaramyarossella18@gmail.com</b></p>
+                <p>Phone: <b>9176353504</b></p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/yourprofile" target="_blank"><img src="github.png" alt="GitHub"></a>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; SIVARAMYA | Last updated on <span id="date"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>
